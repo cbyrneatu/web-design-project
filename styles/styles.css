@@ -38,6 +38,7 @@ header {
 }
 
 footer {
+    margin-top: 20px;
     text-align: center;
     background-color: var(--secondary-background);
     color: var(--light-text-color);
@@ -60,6 +61,23 @@ a:hover {
 nav ul li {
     list-style-type: none;
     display: inline;
+}
+
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 2px solid #dbdbdb;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #f3f3f3;
 }
 
 .floating-left {
