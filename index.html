@@ -7,6 +7,10 @@
 
     <link rel="stylesheet" href="styles/styles.css">
 
+    <!-- Import the Inter font, from https://rsms.me/. It is a free font and can be used by anyone. -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+
     <title></title>
 </head>
 
@@ -15,7 +19,7 @@
         <h2 style="float: left; margin-right: 20px;">Website</h2>
         <nav>
             <ul>
-                <li><a class="link-button" href="index.html">Home</a></li>
+                <li><a class="link-button" id="active" href="index.html">Home</a></li>
                 <li><a class="link-button" href="teams.html">Teams</a></li>
                 <li><a class="link-button" href="drivers.html">Drivers</a></li>
                 <li><a class="link-button" href="tracks.html">Tracks</a></li>
@@ -25,6 +29,21 @@
     </header>
 
     <main>
+        <section style="min-height: 380px;">
+            <h2>About Formula 1</h2>
+            <p> Formula 1 is considered to be one of the worlds most popular motorsport series.
+                It has been taking place almost every single year for just over 70 years, with millions of fans attending races throughout the season.
+            </p>
+
+            <article style="margin-top: 15px;">
+                <img style="width: 400px;" class="floating-left rounded" src="images/red-bull-car.jpg"
+                    alt="Image of Red Bull's 2019 car, the RB15.">
+
+                <p>In the sport, there are ten teams who participate, each with two drivers.
+                    Every team within the sport has the same end-goal, to try and win the <a href="#definitions-constructors">constructors championship</a>.
+                </p>
+            </article>
+        </section>
     </main>
 </body>
 

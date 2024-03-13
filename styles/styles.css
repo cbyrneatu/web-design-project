@@ -1,10 +1,11 @@
-/* Declare all the colors used for the website in one place so I don't have to copy and paste them everywhere */
 :root {
+    /* Declare all the colors used for the website in one place so I don't have to copy and paste them everywhere */
     --accent-color: #ec5555;
-}
+    --accent-color-light: #f88a8a;
 
-* {
-    font-family: Arial, Helvetica, sans-serif;
+    /* Setup for the Inter font, from https://rsms.me/inter/ */
+    font-family: Inter, sans-serif;
+    font-feature-settings: 'liga' 1, 'calt' 1;
 }
 
 body {
@@ -12,8 +13,8 @@ body {
     padding: 0;
 }
 
-/* Put 0 margin on everything inside the header */
-header * {
+main {
+    padding: 0 15px;
     margin: 0;
 }
 
@@ -22,9 +23,28 @@ header {
     background-color: #f8f8f8;
 }
 
+a {
+    color: var(--accent-color);
+    transition: 0.2s;
+}
+
+a:hover {
+    color: #c24747;
+}
+
 nav ul li {
     list-style-type: none;
     display: inline;
+}
+
+.floating-left {
+    float: left;
+    margin-right: 10px;
+}
+
+.rounded {
+    border-radius: 10px;
+    border: 3px solid #cccccc;
 }
 
 .link-button {
@@ -37,7 +57,7 @@ nav ul li {
     text-decoration: none;
     text-align: center;
 
-    border-radius: 5px;
+    border-radius: 6px;
 
     /* Makes changes to the link button, like changing the background colour when hovered animate. */
     transition: 0.2s;
@@ -46,4 +66,38 @@ nav ul li {
 .link-button:hover {
     background-color: var(--accent-color);
     color: white;
+}
+
+nav #active {
+    /* Adds an outline to the active links */
+    outline: 2px solid var(--accent-color-light);
+
+    /* Prevents the outline from changing the size of the link itself, keeping it inline with the other elements */
+    outline-offset: -2px;
+
+    background-color: var(--accent-color);
+    color: white;
+}
+
+/* Reduce the amount of margins on headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    margin: 10px 0;
+}
+
+p {
+    /* Reduce the amount of margin on p */
+    margin: 10px 0;
+
+    /* Put a new line on the page when having a line break in the text instead of continuing on the same line */
+    white-space: pre-line;
+}
+
+/* Put 0 margin on everything inside the header */
+header * {
+    margin: 0;
 }
