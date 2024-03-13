@@ -2,6 +2,8 @@
     /* Declare all the colors used for the website in one place so I don't have to copy and paste them everywhere */
     --accent-color: #ec5555;
     --accent-color-light: #f88a8a;
+    --secondary-background: #f8f8f8;
+    --light-text-color: #505050;
 
     /* Setup for the Inter font, from https://rsms.me/inter/ */
     font-family: Inter, sans-serif;
@@ -11,16 +13,39 @@
 body {
     margin: 0;
     padding: 0;
+
+    /* Makes the body a flex container, and allow it to be at least 100% of the browser's height */
+    display: flex;
+    min-height: 100svh;
+    flex-direction: column;
 }
 
 main {
     padding: 0 15px;
     margin: 0;
+
+    /* 
+        Because the body is a flex container, I tell the main to grow to whatever size it wants to fill up the remaining space
+        This will allow my footer to remain at the bottom of the page, and not overlay any content, like it would when using
+        an fixed position :)
+    */
+    flex-grow: 1;
 }
 
 header {
     padding: 15px;
-    background-color: #f8f8f8;
+    background-color: var(--secondary-background);
+}
+
+footer {
+    text-align: center;
+    background-color: var(--secondary-background);
+    color: var(--light-text-color);
+}
+
+article {
+    /* Prevents floating images from shrinking the height of the article, causing other text to go into it */
+    overflow: auto;
 }
 
 a {
@@ -40,6 +65,11 @@ nav ul li {
 .floating-left {
     float: left;
     margin-right: 10px;
+}
+
+.floating-right {
+    float: right;
+    margin-left: 10px;
 }
 
 .rounded {
@@ -92,9 +122,6 @@ h6 {
 p {
     /* Reduce the amount of margin on p */
     margin: 10px 0;
-
-    /* Put a new line on the page when having a line break in the text instead of continuing on the same line */
-    white-space: pre-line;
 }
 
 /* Put 0 margin on everything inside the header */
