@@ -1,0 +1,49 @@
+/* Declare all the colors used for the website in one place so I don't have to copy and paste them everywhere */
+:root {
+    --accent-color: #ec5555;
+}
+
+* {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* Put 0 margin on everything inside the header */
+header * {
+    margin: 0;
+}
+
+header {
+    padding: 6px;
+    background-color: #f8f8f8;
+}
+
+nav ul li {
+    list-style-type: none;
+    display: inline;
+}
+
+.link-button {
+    padding: 10px 20px;
+    display: inline-block;
+
+    background-color: #e2e2e2;
+    color: black;
+
+    text-decoration: none;
+    text-align: center;
+
+    border-radius: 5px;
+
+    /* Makes changes to the link button, like changing the background colour when hovered animate. */
+    transition: 0.2s;
+}
+
+.link-button:hover {
+    background-color: var(--accent-color);
+    color: white;
+}
