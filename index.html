@@ -11,12 +11,28 @@
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
 
-    <title></title>
+    <title>F1 Info</title>
+    <meta name="description" content="Information about Formula 1.">
+    <meta name="keywords" content="formula 1, motorsport, teams">
+
+    <style>
+        #main-image {
+            width: 320px;
+        }
+
+        /* On screens less than 600px, make the image 98% of the width. */
+        @media screen and (max-width: 600px) {
+            #main-image {
+                width: 98%;
+                margin-bottom: 10px;
+            }
+        }
+    </style>
 </head>
 
 <body>
     <header>
-        <h2 style="float: left; margin-right: 20px;">Website</h2>
+        <h2 style="float: left; margin-right: 20px;">F1 Info</h2>
         <nav>
             <ul>
                 <li><a class="link-button" id="active" href="index.html">Home</a></li>
@@ -29,12 +45,12 @@
     </header>
 
     <main>
-        <section style="width: 70%;">
+        <section>
             <article>
                 <h2>About Formula 1</h2>
 
-                <img style="width: 28%;" class="floating-left rounded" src="images/red-bull-car.jpg"
-                    alt="Image of Red Bull's 2019 car, the RB15.">
+                <img id="main-image" class="floating-left rounded" src="images/mercedes-car.jpg"
+                    alt="Image of Mercedes' W14.">
 
                 <p>
                     Formula 1 is considered to be one of the worlds most popular motorsport series.
@@ -51,6 +67,8 @@
                     Teams will spend countless months and years developing their cars, every change that they make giving them a tenth, or even just a hundereth
                     of a second advantage above their rivals.
                 </p>
+
+                <a href="https://www.formula1.com/">Go to the Official Formula 1 Website -></a>
             </article>
         </section>
 
@@ -61,107 +79,106 @@
             <table>
                 <tr>
                     <th>Date</th>
-                    <th>Track Name</th>
+                    <th>Location</th>
                     <th>Date</th>
-                    <th>Track Name</th>
+                    <th>Location</th>
                 </tr>
 
                 <tr>
                     <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>Bahrain International Circuit, <span class="light-text">Bahrain</span></td>
 
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>19th of July</td>
+                    <td>Hungaroring, <span class="light-text">Budapest, Hungary</span></td>
                 </tr>
 
                 <tr>
                     <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>Jeddah Corniche Circuit, <span class="light-text">Saudi Arabia</span></td>
 
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>26th of July</td>
+                    <td>Circuit de Spa-Francorchamps, <span class="light-text">Belgium</span></td>
                 </tr>
 
                 <tr>
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>24th of March</td>
+                    <td>Albert Park Circuit, <span class="light-text">Melbourne, Australia</span></td>
 
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>25th of August</td>
+                    <td>Circuit Park Zandvoort, <span class="light-text">Zandvoort, Netherlands</span></td>
                 </tr>
 
                 <tr>
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>7th of April</td>
+                    <td>Suzuka International Racing Course, <span class="light-text">Japan</span></td>
 
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>1st of September</td>
+                    <td>Autodromo Nazionale Monza, <span class="light-text">Monza, Italy</span></td>
                 </tr>
 
                 <tr>
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>21st of April</td>
+                    <td>Shanghai International Circuit, <span class="light-text">China</span></td>
 
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>15th of September</td>
+                    <td>Baku City Circuit, <span class="light-text">Baku, Azerbaijan</span></td>
                 </tr>
 
                 <tr>
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>5th of May</td>
+                    <td>Miami International Autodrome, <span class="light-text">USA</span></td>
 
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>22nd of September</td>
+                    <td>Marina Bay Street Circuit, <span class="light-text">Singapore</span></td>
                 </tr>
 
                 <tr>
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>19th of May</td>
+                    <td>Autodromo Enzo e Dino Ferrari, <span class="light-text">Rome, Italy</span></td>
 
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>20th of October</td>
+                    <td>Circuit of the Americas, <span class="light-text">Texas, USA</span></td>
                 </tr>
 
                 <tr>
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>26th of May</td>
+                    <td>Circuit de Monaco, <span class="light-text">Monaco</span></td>
 
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>27th of October</td>
+                    <td>Autodromo Hermanos Rodriguez, <span class="light-text">Mexico City, Mexico</span></td>
                 </tr>
 
                 <tr>
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>7th of June</td>
+                    <td>Circuit Gilles-Villeneuve, <span class="light-text">Montreal, Caneda</span></td>
 
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>3rd of November</td>
+                    <td>Autodromo Jose Carlos Pace, <span class="light-text">Sao Paulo, Brazil</span></td>
                 </tr>
 
                 <tr>
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>21st of June</td>
+                    <td>Circuit de Barcelona-Catalunya, <span class="light-text">Barcelona, Spain</span></td>
 
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>24th of November</td>
+                    <td>Las Vegas Street Circuit, <span class="light-text">Nevada, USA</span></td>
                 </tr>
 
                 <tr>
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>28th of June</td>
+                    <td>Red Bull Ring, <span class="light-text">Spielberg, Austria</span></td>
 
-                    <td>2nd of March</td>
-                    <td>Bahrain International Circuit, Bahrain</td>
+                    <td>1st of December</td>
+                    <td>Losail International Circuit, <span class="light-text">Lusail, Qatar</span></td>
                 </tr>
 
                 <tr>
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>5th of July</td>
+                    <td>Silverstone Circuit, <span class="light-text">Silverstone, United Kingdom</span></td>
 
-                    <td>9th of March</td>
-                    <td>Jeddah Corniche Circuit, Saudi Arabia</td>
+                    <td>8th of December</td>
+                    <td>Yas Marina Circuit, <span class="light-text">Abu Dhabi, United Arab Emirates</span></td>
                 </tr>
-
             </table>
         </section>
     </main>

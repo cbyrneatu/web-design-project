@@ -3,7 +3,7 @@
     --accent-color: #ec5555;
     --accent-color-light: #f88a8a;
     --secondary-background: #f8f8f8;
-    --light-text-color: #505050;
+    --light-text-color: #7b7b7b;
 
     /* Setup for the Inter font, from https://rsms.me/inter/ */
     font-family: Inter, sans-serif;
@@ -35,6 +35,10 @@ main {
 header {
     padding: 15px;
     background-color: var(--secondary-background);
+
+    /* Makes the header a flex container that centers all items vertically */
+    display: flex; 
+    align-items: center;
 }
 
 footer {
@@ -46,7 +50,7 @@ footer {
 
 article {
     /* Prevents floating images from shrinking the height of the article, causing other text to go into it */
-    overflow: auto;
+    overflow: hidden;
 }
 
 a {
@@ -56,6 +60,10 @@ a {
 
 a:hover {
     color: #c24747;
+}
+
+nav ul {
+    padding: 0;
 }
 
 nav ul li {
@@ -80,6 +88,10 @@ tr:nth-child(even) {
     background-color: #f3f3f3;
 }
 
+.light-text {
+    color: var(--light-text-color);
+}
+
 .floating-left {
     float: left;
     margin-right: 10px;
@@ -88,6 +100,7 @@ tr:nth-child(even) {
 .floating-right {
     float: right;
     margin-left: 10px;
+    margin-bottom: 5px;
 }
 
 .rounded {
