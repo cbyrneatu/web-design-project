@@ -1,12 +1,17 @@
+/* Declare all the colors used for the website in one place so I don't have to copy and paste them everywhere */
 :root {
-    /* Declare all the colors used for the website in one place so I don't have to copy and paste them everywhere */
     --accent-color: #ec5555;
     --accent-color-light: #f88a8a;
     --secondary-background: #f8f8f8;
-    --light-text-color: #7b7b7b;
+    --light-background: #f3f3f3;
+    --light-text-color: #767676;
+    --border-color: #cccccc;
+}
+
+* {
+    font-family: Inter, sans-serif;
 
     /* Setup for the Inter font, from https://rsms.me/inter/ */
-    font-family: Inter, sans-serif;
     font-feature-settings: 'liga' 1, 'calt' 1;
 }
 
@@ -79,13 +84,13 @@ table {
 
 td,
 th {
-    border: 2px solid #dbdbdb;
+    border: 2px solid var(--border-color);
     text-align: left;
     padding: 8px;
 }
 
 tr:nth-child(even) {
-    background-color: #f3f3f3;
+    background-color: var(--light-background);
 }
 
 .light-text {
@@ -105,7 +110,7 @@ tr:nth-child(even) {
 
 .rounded {
     border-radius: 10px;
-    border: 3px solid #cccccc;
+    border: 3px solid var(--border-color);
 }
 
 .link-button {
