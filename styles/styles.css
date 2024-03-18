@@ -58,6 +58,18 @@ article {
     overflow: hidden;
 }
 
+#main-image {
+    width: 320px;
+}
+
+/* On screens less than 600px, make the image 98% of the width. */
+@media screen and (max-width: 600px) {
+    #main-image {
+        width: 98%;
+        margin-bottom: 10px;
+    }
+}
+
 a {
     color: var(--accent-color);
     transition: 0.2s;
