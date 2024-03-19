@@ -13,6 +13,30 @@
     <title>Drivers - F1 Info</title>
     <meta name="description" content="Information about the 20 drivers on the grid for the 2024 F1 season.">
     <meta name="keywords" content="driver, lewis, max">
+
+    <style>
+        .driver-pic {
+            height: 175px;
+            margin-right: 15px;
+        }
+
+        /* On screens less than 600px, make the element 98% of the width. */
+        @media screen and (max-width: 600px) {
+            #primary-table {
+                width: 98% !important;
+                margin-bottom: 10px;
+            }
+        }
+
+        section ul {
+            margin: 0;
+            list-style-type: none;
+        }
+
+        section ul li {
+            margin-bottom: 8px;
+        }
+    </style>
 </head>
 
 <body>
@@ -30,7 +54,120 @@
     </header>
 
     <main>
+        <article>
+            <h2>Drivers</h2>
 
+            <table style="width: 40%; margin-left: 20px;" id="primary-table" class="floating-right">
+                <tr>
+                    <td>Finishing Position</td>
+                    <td>Points</tf>
+                    <td>Finishing Position</td>
+                    <td>Points</tf>
+                </tr>
+                <tr>
+                    <td>1st</td>
+                    <td>25</tf>
+                    <td>6th</td>
+                    <td>8</tf>
+                </tr>
+                <tr>
+                    <td>2nd</td>
+                    <td>18</tf>
+                    <td>7th</td>
+                    <td>4</td>
+                </tr>
+                <tr>
+                    <td>3rd</td>
+                    <td>15</tf>
+                    <td>8th</td>
+                    <td>6</tf>
+                </tr>
+                <tr>
+                    <td>4th</td>
+                    <td>12</tf>
+                    <td>9th</td>
+                    <td>2</tf>
+                </tr>
+                <tr>
+                    <td>5th</td>
+                    <td>10</tf>
+                    <td>10th</td>
+                    <td>1</tf>
+                </tr>
+            </table>
+
+            <p>
+                Much like the teams in Formula 1, drivers also have their own championship, the drivers championship. 
+            </p>
+
+            <p>
+                Points are awarded for the drivers who finish in the top 10, and whoever has the most points at the end of the year will win the drivers championship.
+            </p>
+
+            <p>If a driver finishes within the top 10, and sets a fastest lap for the race, they will be awarded an additional point.</p>
+        </article>
+
+        <h2>Drivers participating in the 2024 Formula 1 season</h2>
+
+        <section id="lewis-hamilton" style="float: left; width: 48%;">
+            <h3>Lewis Hamilton</h3>
+
+            <img src="images/lewis-hamilton.jpg" alt="A picture of Lewis Hamilton in 2021."
+                class="driver-pic rounded floating-left">
+
+            <ul>
+                <li>Driver Number: 44</li>
+                <li>Team: <a href="teams.html#mercedes">Mercedes AMG Petronas Formula 1 Team</a></li>
+                <li>Total Wins: 103</li>
+                <li>Total Championships: 7</li>
+                <li>First Race: 2007 Australian Grand Prix</li>
+            </ul>
+        </section>
+
+        <section id="george-russell" style="float: right; width: 48%;">
+            <h3>George Russell</h3>
+
+            <img src="images/george-russell.jpg" alt="A picture of George Russell in 2021."
+                class="driver-pic rounded floating-left">
+
+            <ul>
+                <li>Driver Number: 63</li>
+                <li>Team: <a href="teams.html#mercedes">Mercedes AMG Petronas Formula 1 Team</a></li>
+                <li>Total Wins: 1</li>
+                <li>Total Championships: 0</li>
+                <li>First Race: 2019 Australian Grand Prix</li>
+            </ul>
+        </section>
+
+        <section id="max-verstappen" style="float: left; width: 48%; margin-top: 15px;">
+            <h3>Max Verstappen</h3>
+
+            <img src="images/verstappen.jpg" alt="A picture of Max Verstappen in 2017."
+                class="driver-pic rounded floating-left">
+
+            <ul>
+                <li>Driver Numbers: 1, 33</li>
+                <li>Team: <a href="teams.html#red-bull">Oracle Red Bull Racing</a></li>
+                <li>Total Wins: 56</li>
+                <li>Total Championships: 3</li>
+                <li>First Race: 2015 Australian Grand Prix</li>
+            </ul>
+        </section>
+
+        <section id="max-verstappen" style="float: right; width: 48%; margin-top: 15px;">
+            <h3>Sergio Perez</h3>
+
+            <img src="images/perez.jpg" alt="A picture of Sergio Perez in 2016."
+                class="driver-pic rounded floating-left">
+
+            <ul>
+                <li>Driver Number: 11</li>
+                <li>Team: <a href="teams.html#red-bull">Oracle Red Bull Racing</a></li>
+                <li>Total Wins: 6</li>
+                <li>Total Championships: 0</li>
+                <li>First Race: 2011 Australian Grand Prix</li>
+            </ul>
+        </section>
     </main>
 
     <footer>

@@ -53,7 +53,7 @@ footer {
     color: var(--light-text-color);
 }
 
-article {
+section, article {
     /* Prevents floating images from shrinking the height of the article, causing other text to go into it */
     overflow: hidden;
 }
