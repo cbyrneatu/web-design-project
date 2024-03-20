@@ -19,7 +19,7 @@ body {
     margin: 0;
     padding: 0;
 
-    /* Makes the body a flex container, and allow it to be at least 100% of the browser's height */
+    /* Makes the body a flex container, and make it be at least 100 units of the browser's view-height */
     display: flex;
     min-height: 100svh;
     flex-direction: column;
@@ -32,7 +32,7 @@ main {
     /* 
         Because the body is a flex container, I tell the main to grow to whatever size it wants to fill up the remaining space
         This will allow my footer to remain at the bottom of the page, and not overlay any content, like it would when using
-        an fixed position :)
+        an fixed position
     */
     flex-grow: 1;
 }
@@ -42,18 +42,24 @@ header {
     background-color: var(--secondary-background);
 
     /* Makes the header a flex container that centers all items vertically */
-    display: flex; 
+    display: flex;
     align-items: center;
 }
 
 footer {
     margin-top: 20px;
+
     text-align: center;
     background-color: var(--secondary-background);
     color: var(--light-text-color);
 }
 
-section, article {
+footer span {
+    padding: 3px;
+}
+
+section,
+article {
     /* Prevents floating images from shrinking the height of the article, causing other text to go into it */
     overflow: hidden;
 }
@@ -112,6 +118,7 @@ tr:nth-child(even) {
 .floating-left {
     float: left;
     margin-right: 10px;
+    margin-bottom: 5px;
 }
 
 .floating-right {
