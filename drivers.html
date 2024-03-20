@@ -22,15 +22,24 @@
         }
 
         .driver-section {
-            width: 48%;
-            height: 229px;
+            width: 45%;
         }
 
-        /* On screens less than 600px, make the element 98% of the width. */
-        @media screen and (max-width: 600px) {
+        .drivers-grid {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        /* On screens less than 850px, make the table fill the screen, and make the driver sections fill the screen */
+        @media screen and (max-width: 850px) {
             #primary-table {
-                width: 98% !important;
+                width: 100% !important;
                 margin-bottom: 10px;
+            }
+
+            .driver-section {
+                width: 100%;
             }
         }
 
@@ -113,10 +122,10 @@
             <p>If a driver finishes within the top 10, and sets a fastest lap for the race, they will be awarded an additional point.</p>
         </article>
 
-        <article>
-            <h2>Drivers participating in the 2024 Formula 1 season</h2>
+        <h2>Drivers participating in the 2024 Formula 1 season</h2>
 
-            <section id="lewis-hamilton" class="driver-section floating-left">
+        <article class="drivers-grid">
+            <section id="lewis-hamilton" class="driver-section">
                 <h3>Lewis Hamilton</h3>
 
                 <img src="images/lewis-hamilton.jpg" alt="A picture of Lewis Hamilton in 2021."
@@ -131,7 +140,7 @@
                 </ul>
             </section>
 
-            <section id="george-russell" class="driver-section floating-right">
+            <section id="george-russell" class="driver-section">
                 <h3>George Russell</h3>
 
                 <img src="images/george-russell.jpg" alt="A picture of George Russell in 2021."
@@ -146,7 +155,7 @@
                 </ul>
             </section>
 
-            <section id="max-verstappen" class="driver-section floating-left">
+            <section id="max-verstappen" class="driver-section">
                 <h3>Max Verstappen</h3>
 
                 <img src="images/verstappen.jpg" alt="A picture of Max Verstappen in 2017."
@@ -161,7 +170,7 @@
                 </ul>
             </section>
 
-            <section id="sergio-perez" class="driver-section floating-right">
+            <section id="sergio-perez" class="driver-section">
                 <h3>Sergio Perez</h3>
 
                 <img src="images/perez.jpg" alt="A picture of Sergio Perez in 2016."
@@ -175,7 +184,7 @@
                     <li>First Race: 2011 Australian Grand Prix</li>
                 </ul>
             </section>
-            </>
+        </article>
     </main>
 
     <footer>
