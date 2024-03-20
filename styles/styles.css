@@ -58,6 +58,23 @@ footer span {
     padding: 3px;
 }
 
+table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td,
+th {
+    border: 2px solid var(--border-color);
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: var(--light-background);
+}
+
 section,
 article {
     /* Prevents floating images from shrinking the height of the article, causing other text to go into it */
@@ -68,12 +85,18 @@ article {
     width: 320px;
 }
 
-/* On screens less than 600px, make the image 98% of the width. */
-@media screen and (max-width: 600px) {
+/* On screens less than 550px wide, adjust the image to make it fit better. */
+@media screen and (max-width: 550px) {
     #main-image {
         width: 98%;
         margin-bottom: 10px;
     }
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
 }
 
 a {
@@ -92,23 +115,6 @@ nav ul {
 nav ul li {
     list-style-type: none;
     display: inline;
-}
-
-table {
-    font-family: arial, sans-serif;
-    border-collapse: collapse;
-    width: 100%;
-}
-
-td,
-th {
-    border: 2px solid var(--border-color);
-    text-align: left;
-    padding: 8px;
-}
-
-tr:nth-child(even) {
-    background-color: var(--light-background);
 }
 
 .light-text {
@@ -151,6 +157,10 @@ tr:nth-child(even) {
 .link-button:hover {
     background-color: var(--accent-color);
     color: white;
+}
+
+.bold {
+    font-weight: bold;
 }
 
 nav #active {

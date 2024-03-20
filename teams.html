@@ -14,6 +14,18 @@
     <title>Teams - F1 Info</title>
     <meta name="description" content="Information about all of the 10 teams in Formula 1.">
     <meta name="keywords" content="teams, mercedes, williams">
+
+    <style>
+        .team {
+            width: 48%;
+        }
+
+        @media screen and (max-width: 850px) {
+            .team {
+                width: 100%;
+            }
+        }
+    </style>
 </head>
 
 <body>
@@ -31,7 +43,7 @@
     </header>
 
     <main>
-        <article style="margin-bottom: 30px;">
+        <article>
             <h1>Teams</h1>
 
             <img id="main-image" src="images/garage.jpg"
@@ -54,107 +66,109 @@
         <h2>Teams entered in the 2024 Formula 1 season</h2>
         <p>As a note, previous names for a team are only listed where a major change in leadership, or purchase of the team, did not lead to the name change.</p>
 
-        <section id="red-bull" style="float: left; width: 48%;">
-            <h3>Oracle Red Bull Racing</h3>
-            <ul>
-                <li>Team Principal: Christian Horner</li>
-                <li>Drivers: <a href="drivers.html#sergio-perez">Sergio Perez (11)</a> and <a
-                        href="drivers.html#max-verstappen">Max Verstappen (1)</a></li>
-                <li>Power Unit Provider: Honda</li>
-                <li>Previous Names: None, only primary sponsor changes</li>
-            </ul>
-        </section>
+        <article class="flex-row">
+            <section id="red-bull" class="team">
+                <h3>Oracle Red Bull Racing</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Christian Horner</li>
+                    <li><span class="bold">Drivers</span>: <a href="drivers.html#sergio-perez">Sergio Perez (11)</a> and
+                        <a href="drivers.html#max-verstappen">Max Verstappen (1)</a></li>
+                    <li><span class="bold">Power Unit Provider</span>: Honda</li>
+                    <li><span class="bold">Previous Names</span>: None, only primary sponsor changes</li>
+                </ul>
+            </section>
 
-        <section id="mercedes" style="float: right; width: 48%;">
-            <h3>Mercedes AMG Petronas Formula 1 Team</h3>
-            <ul>
-                <li>Team Principal: Toto Wolff</li>
-                <li>Drivers: <a href="drivers.html#lewis-hamilton">Lewis Hamilton (44)</a> and <a
-                        href="george-russell">George Russell (63)</a></li>
-                <li>Power Unit Provider: Mercedes</li>
-                <li>Previous Names: None</li>
-            </ul>
-        </section>
+            <section id="mercedes" class="team">
+                <h3>Mercedes AMG Petronas Formula 1 Team</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Toto Wolff</li>
+                    <li><span class="bold">Drivers</span>: <a href="drivers.html#lewis-hamilton">Lewis Hamilton (44)</a>
+                        and <a href="george-russell">George Russell (63)</a></li>
+                    <li><span class="bold">Power Unit Provider</span>: Mercedes</li>
+                    <li><span class="bold">Previous Names</span>: None</li>
+                </ul>
+            </section>
 
-        <section id="ferrari" style="float: left; width: 48%;">
-            <h3>Scuderia Ferrari</h3>
-            <ul>
-                <li>Team Principal: Frederic Vasseur</li>
-                <li>Drivers: Charles Leclerc (16) and Carlos Sainz (55)</li>
-                <li>Power Unit Provider: Ferrari</li>
-                <li>Previous Names: None</li>
-            </ul>
-        </section>
+            <section id="ferrari" class="team">
+                <h3>Scuderia Ferrari</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Frederic Vasseur</li>
+                    <li><span class="bold">Drivers</span>: Charles Leclerc (16) and Carlos Sainz (55)</li>
+                    <li><span class="bold">Power Unit Provider</span>: Ferrari</li>
+                    <li><span class="bold">Previous Names</span>: None</li>
+                </ul>
+            </section>
 
-        <section id="mclaren" style="float: right; width: 48%;">
-            <h3>McLaren Formula 1 Team</h3>
-            <ul>
-                <li>Team Principal: Andrea Stella</li>
-                <li>Drivers: Lando Norris (4) and Oscar Piastri (81)</li>
-                <li>Power Unit Provider: <a href="#mercedes">Mercedes</a></li>
-                <li>Previous Names: None</li>
-            </ul>
-        </section>
+            <section id="mclaren" class="team">
+                <h3>McLaren Formula 1 Team</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Andrea Stella</li>
+                    <li><span class="bold">Drivers</span>: Lando Norris (4) and Oscar Piastri (81)</li>
+                    <li><span class="bold">Power Unit Provider</span>: <a href="#mercedes">Mercedes</a></li>
+                    <li><span class="bold">Previous Names</span>: None</li>
+                </ul>
+            </section>
 
-        <section id="aston-martin" style="float: left; width: 48%;">
-            <h3>Aston Martin Aramco F1 Team</h3>
-            <ul>
-                <li>Team Principal: Mike Krack</li>
-                <li>Drivers: Lance Stroll (18) and Fernando Alonso (14)</li>
-                <li>Power Unit Provider: <a href="#mercedes">Mercedes</a></li>
-                <li>Previous Names: Racing Point, Force India, and more...</li>
-            </ul>
-        </section>
+            <section id="aston-martin" class="team">
+                <h3>Aston Martin Aramco F1 Team</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Mike Krack</li>
+                    <li><span class="bold">Drivers</span>: Lance Stroll (18) and Fernando Alonso (14)</li>
+                    <li><span class="bold">Power Unit Provider</span>: <a href="#mercedes">Mercedes</a></li>
+                    <li><span class="bold">Previous Names</span>: Racing Point, Force India, and more...</li>
+                </ul>
+            </section>
 
-        <section id="haas" style="float: right; width: 48%;">
-            <h3>Moneygram Haas F1 Team</h3>
-            <ul>
-                <li>Team Principal: Ayao Kumatsu</li>
-                <li>Drivers: Nico Hulkenberg (27) and Kevin Magnussen (20)</li>
-                <li>Power Unit Provider: <a href="#ferrari">Ferrari</a></li>
-                <li>Previous Names: None</li>
-            </ul>
-        </section>
+            <section id="haas" class="team">
+                <h3>Moneygram Haas F1 Team</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Ayao Kumatsu</li>
+                    <li><span class="bold">Drivers</span>: Nico Hulkenberg (27) and Kevin Magnussen (20)</li>
+                    <li><span class="bold">Power Unit Provider</span>: <a href="#ferrari">Ferrari</a></li>
+                    <li><span class="bold">Previous Names</span>: None</li>
+                </ul>
+            </section>
 
-        <section id="williams" style="float: left; width: 48%;">
-            <h3>Williams Racing</h3>
-            <ul>
-                <li>Team Principal: James Vowels</li>
-                <li>Drivers: Alex Albon (23) and Logan Sargeant (2)</li>
-                <li>Power Unit Provider: <a href="#mercedes">Mercedes</a></li>
-                <li>Previous Names: None</li>
-            </ul>
-        </section>
+            <section id="williams" class="team">
+                <h3>Williams Racing</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: James Vowels</li>
+                    <li><span class="bold">Drivers</span>: Alex Albon (23) and Logan Sargeant (2)</li>
+                    <li><span class="bold">Power Unit Provider</span>: <a href="#mercedes">Mercedes</a></li>
+                    <li><span class="bold">Previous Names</span>: None</li>
+                </ul>
+            </section>
 
-        <section id="alpine" style="float: right; width: 48%;">
-            <h3>BWT Alpine F1 Team</h3>
-            <ul>
-                <li>Team Principal: Bruno Famin</li>
-                <li>Drivers: Pierre Gasly (10) and Esteban Ocon (31)</li>
-                <li>Power Unit Provider: Renault</li>
-                <li>Previous Names: Renault F1 Team</li>
-            </ul>
-        </section>
+            <section id="alpine" class="team">
+                <h3>BWT Alpine F1 Team</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Bruno Famin</li>
+                    <li><span class="bold">Drivers</span>: Pierre Gasly (10) and Esteban Ocon (31)</li>
+                    <li><span class="bold">Power Unit Provider</span>: Renault</li>
+                    <li><span class="bold">Previous Names</span>: Renault F1 Team</li>
+                </ul>
+            </section>
 
-        <section id="rb" style="float: left; width: 48%;">
-            <h3>Visa CashApp RB Formula One Team</h3>
-            <ul>
-                <li>Team Principal: Laurent Mekies</li>
-                <li>Drivers: Daniel Riccardo (3) and Yuki Tsunoda (22)</li>
-                <li>Power Unit Provider: <a href="#mercedes">Mercedes</a></li>
-                <li>Previous Names: Scuderia AlphaTauri, Toro Rosso, Minardi</li>
-            </ul>
-        </section>
+            <section id="rb" class="team">
+                <h3>Visa CashApp RB Formula One Team</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Laurent Mekies</li>
+                    <li><span class="bold">Drivers</span>: Daniel Riccardo (3) and Yuki Tsunoda (22)</li>
+                    <li><span class="bold">Power Unit Provider</span>: <a href="#mercedes">Mercedes</a></li>
+                    <li><span class="bold">Previous Names</span>: Scuderia AlphaTauri, Toro Rosso, Minardi</li>
+                </ul>
+            </section>
 
-        <section id="sauber" style="float: right; width: 48%;">
-            <h3>Stake F1 Team Kick Sauber</h3>
-            <ul>
-                <li>Team Principal: Alessandro Bravi</li>
-                <li>Drivers: Valterri Bottas (77) and Zhou Guanyu (24)</li>
-                <li>Power Unit Provider: <a href="#ferrari">Ferrari</a></li>
-                <li>Previous Names: Alfa Romeo F1 Team, BMW Sauber</li>
-            </ul>
-        </section>
+            <section id="sauber" class="team">
+                <h3>Stake F1 Team Kick Sauber</h3>
+                <ul>
+                    <li><span class="bold">Team Principal</span>: Alessandro Bravi</li>
+                    <li><span class="bold">Drivers</span>: Valterri Bottas (77) and Zhou Guanyu (24)</li>
+                    <li><span class="bold">Power Unit Provider</span>: <a href="#ferrari">Ferrari</a></li>
+                    <li><span class="bold">Previous Names</span>: Alfa Romeo F1 Team, BMW Sauber</li>
+                </ul>
+            </section>
+        </article>
     </main>
 
     <footer>

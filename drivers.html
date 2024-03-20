@@ -16,31 +16,18 @@
     <meta name="keywords" content="driver, lewis, max">
 
     <style>
-        .driver-pic {
-            height: 175px;
-            margin-right: 15px;
+        #points-table {
+            width: 40%;
+            margin-left: 20px;
         }
 
         .driver-section {
-            width: 45%;
+            width: 48%;
         }
 
-        .drivers-grid {
-            display: flex;
-            flex-direction: row;
-            flex-wrap: wrap;
-        }
-
-        /* On screens less than 850px, make the table fill the screen, and make the driver sections fill the screen */
-        @media screen and (max-width: 850px) {
-            #primary-table {
-                width: 100% !important;
-                margin-bottom: 10px;
-            }
-
-            .driver-section {
-                width: 100%;
-            }
+        .driver-pic {
+            height: 175px;
+            margin-right: 15px;
         }
 
         section ul {
@@ -50,6 +37,23 @@
 
         section ul li {
             margin-bottom: 8px;
+        }
+
+        /* Adjust the width of elements for smaller screens to make it fit better */
+
+        @media screen and (max-width: 700px) {
+            #points-table {
+                width: 100%;
+
+                margin-left: 0;
+                margin-bottom: 10px;
+            }
+        }
+
+        @media screen and (max-width: 870px) {
+            .driver-section {
+                width: 100%;
+            }
         }
     </style>
 </head>
@@ -72,7 +76,7 @@
         <article>
             <h2>Drivers</h2>
 
-            <table style="width: 40%; margin-left: 20px;" id="primary-table" class="floating-right">
+            <table id="points-table" class="floating-right">
                 <tr>
                     <td>Finishing Position</td>
                     <td>Points</tf>
@@ -124,7 +128,7 @@
 
         <h2>Drivers participating in the 2024 Formula 1 season</h2>
 
-        <article class="drivers-grid">
+        <article class="flex-row">
             <section id="lewis-hamilton" class="driver-section">
                 <h3>Lewis Hamilton</h3>
 
@@ -132,11 +136,13 @@
                     class="driver-pic rounded floating-left">
 
                 <ul>
-                    <li>Driver Number: 44</li>
-                    <li>Team: <a href="teams.html#mercedes">Mercedes AMG Petronas Formula 1 Team</a></li>
-                    <li>Total Wins: 103</li>
-                    <li>Total Championships: 7</li>
-                    <li>First Race: 2007 Australian Grand Prix</li>
+                    <li><span class="bold">Driver Number</span>: 44</li>
+                    <li><span class="bold">Team</span>: <a href="teams.html#mercedes">Mercedes AMG Petronas Formula 1
+                            Team</a>
+                    </li>
+                    <li><span class="bold">Total Wins</span>: 103</li>
+                    <li><span class="bold">Total Championships</span>: 7</li>
+                    <li><span class="bold">First Race</span>: 2007 Australian Grand Prix</li>
                 </ul>
             </section>
 
@@ -147,11 +153,14 @@
                     class="driver-pic rounded floating-left">
 
                 <ul>
-                    <li>Driver Number: 63</li>
-                    <li>Team: <a href="teams.html#mercedes">Mercedes AMG Petronas Formula 1 Team</a></li>
-                    <li>Total Wins: 1</li>
-                    <li>Total Championships: 0</li>
-                    <li>First Race: 2019 Australian Grand Prix</li>
+                    <li><span class="bold">Driver Number</span>: 63</li>
+                    <li>
+                        <span class="bold">Team</span>:<a href="teams.html#mercedes">Mercedes AMG Petronas Formula 1
+                            Team</a>
+                    </li>
+                    <li><span class="bold">Total Wins</span>: 1</li>
+                    <li><span class="bold">Total Championships</span>: 0</li>
+                    <li><span class="bold">First Race</span>: 2019 Australian Grand Prix</li>
                 </ul>
             </section>
 
@@ -162,11 +171,11 @@
                     class="driver-pic rounded floating-left">
 
                 <ul>
-                    <li>Driver Numbers: 1, 33</li>
-                    <li>Team: <a href="teams.html#red-bull">Oracle Red Bull Racing</a></li>
-                    <li>Total Wins: 56</li>
-                    <li>Total Championships: 3</li>
-                    <li>First Race: 2015 Australian Grand Prix</li>
+                    <li><span class="bold">Driver Numbers</span>: 1, 33</li>
+                    <li><span class="bold">Team</span>: <a href="teams.html#red-bull">Oracle Red Bull Racing</a></li>
+                    <li><span class="bold">Total Wins</span>: 56</li>
+                    <li><span class="bold">Total Championships</span>: 3</li>
+                    <li><span class="bold">First Race</span>: 2015 Australian Grand Prix</li>
                 </ul>
             </section>
 
@@ -177,11 +186,11 @@
                     class="driver-pic rounded floating-left">
 
                 <ul>
-                    <li>Driver Number: 11</li>
-                    <li>Team: <a href="teams.html#red-bull">Oracle Red Bull Racing</a></li>
-                    <li>Total Wins: 6</li>
-                    <li>Total Championships: 0</li>
-                    <li>First Race: 2011 Australian Grand Prix</li>
+                    <li><span class="bold">Driver Number</span>: 11</li>
+                    <li><span class="bold">Team</span>: <a href="teams.html#red-bull">Oracle Red Bull Racing</a></li>
+                    <li><span class="bold">Total Wins</span>: 6</li>
+                    <li><span class="bold">Total Championships</span>: 0</li>
+                    <li><span class="bold">First Race</span>: 2011 Australian Grand Prix</li>
                 </ul>
             </section>
         </article>
